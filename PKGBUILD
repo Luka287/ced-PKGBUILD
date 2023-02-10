@@ -2,7 +2,7 @@
 
 
 pkgname=ced 
-pkgver=1.0.0
+pkgver=0.3.0
 pkgrel=1
 epoch=
 pkgdesc="Simple text editor made with Qt"
@@ -29,7 +29,7 @@ validpgpkeys=()
 build(){
 	cd "$pkgname-$pkgver"
 	
-	cmake -DCMAKE_BUILD_TYPE=Debug -G Ninja "-DCMAKE_PREFIX_PATH=/path/to/Qt;/path/to/llvm" /path/to/qtcreator_sources
+	cmake -DCMAKE_BUILD_TYPE=Debug -G Ninja "-DCMAKE_PREFIX_PATH=/path/to/Qt;/path/to/llvm" .
 
 	cmake --build .
 }
@@ -40,7 +40,10 @@ package(){
 	cp -rf * ${pkgdir}/opt/${pkgname}
 
 	install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
-	install -Dm644 README.org "${pkgdir}/usr/share/doc/${pkgname}/README.org"
+	install -Dm644 README.md "${pkgdir}/usr/share/doc/${pkgname}/README.md"
+
+	install -Dm755 ced "${pkgdir}/usr/bin/ced"
+
 	
 }
 
