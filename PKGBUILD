@@ -21,7 +21,7 @@ backup=()
 options=()
 install=
 changelog=
-source=("https://github.com/Luka287/ced/archive/refs/tags/1.0.0.tar.gz")
+source=("https://github.com/Luka287/ced/archive/refs/tags/${pkgver}.tar.gz")
 noextract=()
 md5sums=()
 validpgpkeys=()
@@ -36,8 +36,6 @@ build(){
 
 package(){
 	cd "$pkgname-$pkgver"
-	mkdir -p ${pkgdir}/opt/${pkgname}
-	cp -rf * ${pkgdir}/opt/${pkgname}
 
 	install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 	install -Dm644 README.md "${pkgdir}/usr/share/doc/${pkgname}/README.md"
@@ -47,4 +45,5 @@ package(){
 	
 }
 
-sha256sums=('252a45a28a80ddb1a0ba7811e94a1e75f8d716dd4db309f98b4b26624f072153')
+
+sha256sums=('b0555239dedfc0ebc2d97b88d5661f9c7352bcb7c72380925f50868d9f3a278a')
