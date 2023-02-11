@@ -1,8 +1,7 @@
 # Maintainer: Luka287 <Luka287@proton.me>
 
-
-pkgname=ced 
-pkgver=0.3.0
+pkgname=ced-git 
+pkgver=0.4.0
 pkgrel=1
 epoch=
 pkgdesc="Simple text editor made with Qt"
@@ -39,9 +38,9 @@ package(){
 
 	install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 	install -Dm644 README.md "${pkgdir}/usr/share/doc/${pkgname}/README.md"
+	install -Dm644 ced.desktop "${pkgdir}/usr/share/applications/ced.desktop"
 
 	install -Dm755 ced "${pkgdir}/usr/bin/ced"
-
 	
 }
 
