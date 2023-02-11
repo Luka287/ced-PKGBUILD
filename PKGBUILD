@@ -1,6 +1,6 @@
 # Maintainer: Luka287 <Luka287@proton.me>
 
-pkgname=ced-git 
+pkgname=ced 
 pkgver=0.4.0
 pkgrel=1
 epoch=
@@ -45,4 +45,4 @@ package(){
 }
 
 
-sha256sums=('b0555239dedfc0ebc2d97b88d5661f9c7352bcb7c72380925f50868d9f3a278a')
+sha256sums=('9fc0ab12bad6927d6a286b560dccc6d9bf0a90debe4428ec8429d6987df86292')
