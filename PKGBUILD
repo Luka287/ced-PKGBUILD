@@ -1,7 +1,7 @@
 # Maintainer: Luka287 <Luka287@proton.me>
 
 pkgname=ced 
-pkgver=0.4.0
+pkgver=0.6.0
 pkgrel=1
 epoch=
 pkgdesc="Simple text editor made with Qt"
@@ -41,7 +41,10 @@ package(){
 	install -Dm644 ced.desktop "${pkgdir}/usr/share/applications/ced.desktop"
 
 	install -Dm755 ced "${pkgdir}/usr/bin/ced"
-	
+
+	install -Dm644 config.json "${pkgdir}/etc/ced/config.json"
+	install -Dm644 config.json "${pkgdir}/$HOME/.config/ced/config.json"
+
 }
 
 
