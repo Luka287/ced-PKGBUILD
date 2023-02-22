@@ -1,7 +1,7 @@
 # Maintainer: Luka287 <Luka287@proton.me>
 
 pkgname=ced 
-pkgver=0.7.2
+pkgver=0.7.3
 pkgrel=1
 epoch=
 pkgdesc="Simple text editor made with Qt"
@@ -48,4 +48,4 @@ package(){
 }
 
 
-sha256sums=('996223c8ba1b6a4c6c487042627c77f1f79972c8484096829f77402740c0fc49')
+sha256sums=('ba72a8d1749331a8cfb042ac6d36ae01ef33cb85b252a3c01cdf355e61707540')
