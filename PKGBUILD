@@ -1,7 +1,7 @@
 # Maintainer: Luka287 <Luka287@proton.me>
 
 pkgname=ced 
-pkgver=0.7.0
+pkgver=0.7.1
 pkgrel=1
 epoch=
 pkgdesc="Simple text editor made with Qt"
@@ -28,9 +28,9 @@ validpgpkeys=()
 build(){
 	cd "$pkgname-$pkgver"
 	
-	cmake -DCMAKE_BUILD_TYPE=Debug -G Ninja "-DCMAKE_PREFIX_PATH=/path/to/Qt;/path/to/llvm" .
+	cmake .
 
-	cmake --build .
+	cmake --build . --target all
 }
 
 package(){
@@ -48,4 +48,4 @@ package(){
 }
 
 
-sha256sums=('32e3e813f1b9ef769574388a6e8201d23ee33c56387b08f68cc12b23d38d2195')
+sha256sums=('d503f8123e12bd45db8f74753de67a0f70e873562dbaede063f43d2eef88fc96')
