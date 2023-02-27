@@ -45,7 +45,7 @@ package(){
 	install -Dm644 config.json "${pkgdir}/etc/ced/config.json"
 	install -Dm666 config.json "${pkgdir}/$HOME/.config/ced/config.json"
 
-	install -Dm644 ced.png "${pkgdir}/usr/share/picmaps/ced.png"
+	install -Dm644 ced.png "${pkgdir}/usr/share/pixmaps/ced.png"
 }
 
 
