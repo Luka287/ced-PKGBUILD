@@ -1,7 +1,7 @@
 # Maintainer: Luka287 <Luka287@proton.me>
 
 pkgname=ced 
-pkgver=0.7.3
+pkgver=0.7.4
 pkgrel=1
 epoch=
 pkgdesc="Simple text editor made with Qt"
@@ -45,7 +45,8 @@ package(){
 	install -Dm644 config.json "${pkgdir}/etc/ced/config.json"
 	install -Dm666 config.json "${pkgdir}/$HOME/.config/ced/config.json"
 
+	install -Dm644 ced.png "${pkgdir}/usr/share/picmaps/ced.png"
 }
 
 
-sha256sums=('ba72a8d1749331a8cfb042ac6d36ae01ef33cb85b252a3c01cdf355e61707540')
+sha256sums=('5aa1feb3d95e5161e9740d351020f81f6ecb60f6c2dbce7cceb0e9a04519fa3a')
